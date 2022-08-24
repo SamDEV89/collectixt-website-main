@@ -1,0 +1,340 @@
+.about-us {
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.about-us .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+}
+
+.about-us-img {
+    width: 100%;
+}
+
+.about-us-img img {
+    width: 100%;
+}
+
+.about-us .grid .about-us-text h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #0D1723;
+}
+
+.about-us .grid .about-us-text p {
+    color: #575E66;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.mission {
+    padding: 2rem 0;
+}
+
+.mission .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+}
+
+.mission-img {
+    width: 100%;
+}
+
+.mission-img img {
+    width: 100%;
+}
+
+.mission .grid .mission-text h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #0D1723;
+}
+
+.mission .grid .mission-text p {
+    color: #575E66;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.vision {
+    padding: 2rem 0;
+}
+
+.vision .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+}
+
+.vision-img {
+    width: 100%;
+}
+
+.vision-img img {
+    width: 100%;
+}
+
+.vision .grid .vision-text h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #0D1723;
+}
+
+.vision .grid .vision-text p {
+    color: #575E66;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.countdown {
+    padding: 3rem 0;
+}
+
+.countdown-timer {
+    max-width: 100%;
+    padding: 3rem 10rem;
+    background: linear-gradient(360deg, #0D1723 2.62%, #2E3741 98.9%);
+    border: 1.21px solid #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 9.058098793029785px 15.096831321716309px 30.193662643432617px 0px #0D172380;
+}
+
+.countdown-timer h5 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #F87F0B 6.8%, #FFA900 95.7%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.countdown-timer .countdown {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+}
+
+.countdown .time {
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.countdown .time h1 {
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 62px;
+    color: #1C2631;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.countdown .time p {
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.colon {
+    font-size: 5rem;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.landscape-2 {
+    margin-top: -7rem;
+    position: relative;
+    z-index: -1;
+}
+
+
+.landscape-2 .btn {
+    background: linear-gradient(90deg, #f87f0b 6.8%, #ffa900 95.7%);
+    box-shadow: 0px 5px 50px 0px #ffa90080;
+    box-shadow: 0px 15px 15px 0px #ffc000 inset;
+    border-radius: 8px;
+    padding: 20px 36px;
+    border: 0;
+    color: #fff;
+    font-family: inherit;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-weight: 600;
+    font-size: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.button {
+    z-index: 1;
+}
+
+@media (max-width: 1300px) {
+    .countdown-timer {
+        padding: 3rem 5rem;
+    }
+
+    .countdown .time h1 {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .countdown-timer {
+        padding: 3rem 2rem;
+    }
+
+    .countdown .time h1 {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .about-us .grid .about-us-text h1,
+    .mission .grid .mission-text h1, 
+    .vision .grid .vision-text h1
+     {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .about-us .grid .about-us-text p,
+    .mission .grid .mission-text p,
+    .vision .grid .vision-text p
+     {
+        font-size: 15px;
+        line-height: 29px;
+    }
+
+    .countdown {
+        padding: 0rem;
+    }
+    
+    .landscape-2 {
+        margin-top: -2.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .countdown-timer {
+        padding: 2rem 2rem;
+    }
+
+    .countdown .time h1 {
+        padding: .4rem;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .colon {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us .grid,
+    .mission .grid,
+    .vision .grid {
+        grid-template-columns: 1fr;
+    
+    }
+
+    .about-us-text {
+        order: 1;
+    }
+
+    .about-us {
+        padding: 1rem 0;
+        margin-top: 8rem;
+    }
+
+    .mission {
+        padding: 0rem;
+    }
+
+    .vision-text {
+        order: 1;
+    }
+}
+
+@media (max-width: 650px) {
+    .landscape-2 .mobile {
+        margin-top: 6rem;
+    } 
+
+    .landscape-2 .btn {
+        top: 10%;
+    }
+
+    .landscape-2 .btn {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .countdown {
+        margin: 0;
+    }
+
+    .countdown-timer h5 {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .countdown .time h1 {
+        padding: .7rem ;
+        font-size: 20px;
+    }
+
+    .countdown .time p {
+        font-size: 12px;
+    }
+
+    .colon {
+        font-size: 1.5rem;
+    }
+
+    .landscape-2 {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .landscape-2 .btn {
+        top: -5%;
+    }
+
+    .landscape-2 .btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+   .countdown-timer {
+    padding: 2rem .5rem;
+   }
+}

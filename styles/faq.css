@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+body {
+  min-height: 100vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.accordion li {
+    margin-bottom: 1.5rem;
+    padding: 1rem 4rem;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+  border-radius: 1rem;
+  padding: 15rem 10%;
+}
+
+.accordion__heading {
+  margin-bottom: 1rem;
+  padding: 0 1.4rem;
+}
+
+.accordion__item {
+    background: #EBEBEC;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.accordion__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 4rem;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.1s;
+  font-family: inherit;
+  background: #EBEBEC;
+  border-radius: 8px;
+}
+.accordion__btn:hover {
+    background: #F5F5F6;
+    color: #FFA900;
+}
+
+.accordion__caption {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.accordion__item--active .accordion__btn, p, .accordion ul {
+    background: #DEDFE1;
+    color: #000
+}
+
+
+.accordion__item--active .accordion__icon {
+  transform: rotate(90deg);
+}
+
+.accordion__content {
+  font-weight: 300;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateX(16px);
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+}
+.accordion__content p {
+  padding: 1rem 4rem;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.accordion__item--active .accordion__content {
+  opacity: 1;
+  transform: translateX(0px);
+  max-height: 100vh;
+}
+
+@media (max-width: 500px) {
+  .accordion__caption {
+    font-size: 15px;
+  }
+
+  .accordion__btn {
+    padding: 2rem 1rem;
+  }
+
+  .accordion__content p, .accordion li {
+    padding: 1rem 1rem;
+    font-size: 15px;
+  }
+}

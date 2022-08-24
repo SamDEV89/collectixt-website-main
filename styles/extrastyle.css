@@ -1,0 +1,42 @@
+a {
+    color: #fff
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+
+@media (max-width: 1100px) {
+    .btns {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .btns {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .btns {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 300px) {
+    .btns {
+       grid-template-columns:  1fr;
+       gap: 0;
+    }
+
+    .hero-text .btn {
+        margin: 1rem !important;
+    }
+}
